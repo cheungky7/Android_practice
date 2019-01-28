@@ -26,7 +26,11 @@
         android:id="@+id/location_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="@string/edittext_loc"/>
+=======
+        android:text="@string/edittext_uri"/>
+>>>>>>> 362c4a7306890bc07b323bd8a479b753f0c20eac
 
     <Button
         android:id="@+id/open_location_button"
