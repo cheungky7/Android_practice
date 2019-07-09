@@ -2,10 +2,7 @@ package com.example.kycheung.implicit_intents;
 
 import android.content.Intent;
 import android.net.Uri;
-<<<<<<< HEAD
 import android.support.v4.app.ShareCompat;
-=======
->>>>>>> 362c4a7306890bc07b323bd8a479b753f0c20eac
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,29 +12,24 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     private EditText mWebsiteEditText;
-<<<<<<< HEAD
+
     private EditText mLocationEditText;
     private EditText mShareTextEditText;
-=======
->>>>>>> 362c4a7306890bc07b323bd8a479b753f0c20eac
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
+
         mWebsiteEditText = findViewById(R.id.website_edittext);
         mLocationEditText = findViewById(R.id.location_edittext);
         mShareTextEditText = findViewById(R.id.share_edittext);
     }
 
-    public void openWebsite(View view) {
-
-=======
-    }
 
     public void openWebsite(View view) {
         mWebsiteEditText = findViewById(R.id.website_edittext);
->>>>>>> 362c4a7306890bc07b323bd8a479b753f0c20eac
+
         String url = mWebsiteEditText.getText().toString();
         Uri webpage = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
@@ -48,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d("ImplicitIntents", "Can't handle this intent!");
         }
     }
-<<<<<<< HEAD
+
 
     public void openLocation(View view) {
         String loc = mLocationEditText.getText().toString();
@@ -72,6 +64,4 @@ public class MainActivity extends AppCompatActivity {
                 .startChooser();
 
     }
-=======
->>>>>>> 362c4a7306890bc07b323bd8a479b753f0c20eac
 }
